@@ -1,0 +1,30 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Outro evento novo",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+
+###
+
+POST http://localhost:3333/events/04015c30-baeb-45ad-8f8d-855a88afd6ae/attendees
+Content-Type: application/json
+
+{
+    "name": "Schwengber Gui",
+    "email": "schwengberdeveloper1020@gmail.com"
+}
+
+// http://localhost:3333/
+###
+
+GET http://localhost:3333/events/04015c30-baeb-45ad-8f8d-855a88afd6ae
+
+
+###
+
+// ATTENDEE
+http://localhost:3333/attendees/2/badge
